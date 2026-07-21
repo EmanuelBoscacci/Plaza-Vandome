@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plaza Vendôme - Alta joyería de lujo y minimalismo. Colecciones exclusivas esculpidas a mano en oro amarillo, blanco y rosa con diamantes certificados.">
+  <title>PLAZA VENDÔME | Alta Joyería de Lujo y Minimalismo</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css?v=7">
+  
+  <!-- Google Model Viewer (Cargado en el cliente para el visualizador 3D) -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</head>
+<body>
+
+  <!-- Atelier Preloader de Bienvenida -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-content">
+      <h2 class="preloader-logo">PLAZA VENDÔME</h2>
+      <span class="preloader-sub">HAUTE JOAILLERIE</span>
+      <div class="preloader-bar"></div>
+    </div>
+  </div>
+
+  <!-- Cursor Personalizado de Experiencia -->
+  <div id="custom-cursor" class="custom-cursor"></div>
+  <div id="custom-cursor-dot" class="custom-cursor-dot"></div>
+
+  <!-- Destellos y Partículas Doradas Flotantes (Parallax) -->
+  <div class="parallax-sparkles-container" aria-hidden="true">
+    <div class="sparkle sparkle-left-1" data-speed="0.12"></div>
+    <div class="sparkle sparkle-right-1" data-speed="0.06"></div>
+    <div class="sparkle sparkle-left-2" data-speed="0.18"></div>
+    <div class="sparkle sparkle-right-2" data-speed="0.10"></div>
+    <div class="sparkle sparkle-left-3" data-speed="0.08"></div>
+    <div class="sparkle sparkle-right-3" data-speed="0.15"></div>
+  </div>
+
+  <!-- Navegación -->
+  <header class="navbar" id="navbar">
+    <div class="navbar-container">
+      <a href="#" class="logo" id="logo-brand">PLAZA VENDÔME</a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#showroom" class="nav-link">Showroom</a>
+        <a href="#filosofia" class="nav-link">El Atelier</a>
+        <a href="#coleccion" class="nav-link">Colecciones</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-bag" aria-label="Bolsa de compras" id="btn-cart" style="position: relative;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span id="cart-badge" class="cart-badge" style="display: none;">0</span>
+        </button>
+        <a href="#contacto" class="btn-appointment" id="btn-book">Reservar Cita</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="assets/hero_jewelry.jpg" alt="Exclusiva joyería fina Plaza Vendôme sobre mármol" class="hero-image">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-subtitle">HAUTE JOAILLERIE</span>
+      <h1 class="hero-title">La pureza del arte hecha eternidad</h1>
+      <p class="hero-text">Piezas de alta joyería esculpidas a mano en metales preciosos y gemas seleccionadas bajo los más rigurosos estándares de exclusividad.</p>
+      <div class="hero-actions">
+        <a href="#showroom" class="btn btn-primary" id="hero-cta-discover">Descubrir Colección</a>
+        <a href="#filosofia" class="btn btn-secondary" id="hero-cta-philosophy">Nuestra Historia</a>
+      </div>
+    </div>
+    <div class="scroll-indicator" id="scroll-indicator">
+      <span class="scroll-text">Deslizar</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Sección Filosofía / El Atelier -->
+  <section class="filosofia" id="filosofia">
+    <div class="container grid-philosophy">
+      <div class="philosophy-text reveal">
+        <span class="section-tag">EL ARTE DE LA EXCLUSIVIDAD</span>
+        <h2 class="section-title">Artesanía sin concesiones</h2>
+        <p class="lead-text">Cada pieza que sale de nuestro Atelier es el resultado de cientos de horas de dedicación, donde la precisión técnica se encuentra con la visión artística.</p>
+        <p class="body-text">No creemos en la producción masiva. Nuestras joyas se conciben como esculturas portables, utilizando oro reciclado de 18 quilates y diamantes de procedencia ética certificados por el GIA. Cada engaste es realizado bajo microscopio para asegurar que la luz fluya y encienda cada faceta de la piedra.</p>
+        <div class="quote-block">
+          <blockquote>"La verdadera joya no adorna, revela la esencia de quien la lleva."</blockquote>
+          <cite>— Maestro Artesano de Plaza Vendôme</cite>
+        </div>
+      </div>
+      <div class="philosophy-images reveal delay-1">
+        <div class="image-wrapper-large">
+          <img src="assets/hero_jewelry.jpg" alt="Proceso de diseño y bocetado en el Atelier" class="atelier-img">
+        </div>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Hecho a Mano</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">GIA</span>
+            <span class="stat-label">Certificación Oficial</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showroom Interactivo (Selector de Variantes) -->
+  <section class="showroom" id="showroom">
+    <div class="container">
+      <div class="showroom-header text-center reveal">
+        <span class="section-tag">SHOWROOM INTERACTIVO</span>
+        <h2 class="section-title">Elige tu metal</h2>
+        <p class="section-desc">Personaliza nuestra pieza icónica interactuando con los diferentes metales preciosos.</p>
+      </div>
+
+      <div class="showroom-content">
+        <!-- Visualizador de Joya -->
+        <div class="product-gallery reveal" style="display: flex; flex-direction: column;">
+          
+          <!-- Selector de Modo de Vista -->
+          <div class="view-mode-toggle" style="display: flex; justify-content: center; gap: 20px; margin-bottom: 20px;">
+            <button class="btn-toggle-view active" id="btn-view-photo" style="background: none; border: none; font-size: 10px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; cursor: pointer; padding-bottom: 5px; border-bottom: 1px solid #D4AF37; color: #1A1A1A; transition: all 0.3s ease;">
+              Fotografía
+            </button>
+            <button class="btn-toggle-view" id="btn-view-3d" style="background: none; border: none; font-size: 10px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; cursor: pointer; padding-bottom: 5px; border-bottom: 1px solid transparent; color: #8E8E93; transition: all 0.3s ease;">
+              Modelo 3D / AR
+            </button>
+          </div>
+
+          <div class="product-image-container">
+            <!-- Imagen Estática -->
+            <img src="assets/variant_yellow_gold.jpg" alt="Anillo Eternity Solitaire en Oro Amarillo" id="showroom-image" class="showroom-product-img active">
+            <div class="image-lens" id="image-lens-overlay"></div>
+            
+            <!-- Visor 3D de Google (Oculto inicialmente) -->
+            <model-viewer 
+              id="showroom-3d-viewer"
+              src="assets/ring_yellow.glb"
+              poster="assets/variant_yellow_gold.jpg"
+              alt="Anillo Eternity Solitaire 3D"
+              ar
+              ar-modes="webxr quick-look"
+              camera-controls
+              auto-rotate
+              rotation-interval="30"
+              interaction-prompt="auto"
+              shadow-intensity="1"
+              environment-image="neutral"
+              exposure="1.2"
+              style="width: 100%; height: 100%; display: none; background-color: #FAFAFA; outline: none;"
+            >
+              <button slot="ar-button" style="position: absolute; bottom: 20px; right: 20px; background-color: #1A1A1A; color: #FAFAFA; border: 1px solid #D4AF37; padding: 10px 20px; font-size: 10px; font-family: 'Montserrat', sans-serif; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; cursor: pointer; z-index: 10;">
+                📱 Ver en tu espacio (AR)
+              </button>
+            </model-viewer>
+          </div>
+
+          <!-- Switch para cargar el modelo de demostración -->
+          <div id="demo-model-container" style="margin-top: 12px; text-align: center; display: none;">
+            <button id="btn-toggle-demo-glb" style="background: none; border: none; color: #8E8E93; font-size: 10px; text-decoration: underline; cursor: pointer; letter-spacing: 0.05em;">
+              👉 Activar Modelo 3D de Demostración PBR (Helmet)
+            </button>
+          </div>
+        </div>
+
+        <!-- Detalles y Personalización -->
+        <div class="product-info reveal delay-1">
+          <h3 class="product-title">Anillo Eternity Solitaire</h3>
+          <div class="product-price" id="product-price">U$D 8,500</div>
+          
+          <p class="product-description">Una obra maestra del minimalismo contemporáneo. Un diamante central de corte seleccionado sostenido con delicadeza por una montura de cuatro garras que maximiza la refracción de la luz.</p>
+          
+          <!-- Customizador de Joya (Bespoke) -->
+          <div class="bespoke-customizer-container" style="margin-bottom: 30px; display: flex; flex-direction: column; gap: 20px;">
+            
+            <!-- Selector de Metales -->
+            <div class="customizer-item">
+              <span class="customizer-label" style="display: block; font-size: 10px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-elegance); margin-bottom: 8px;">
+                Metal seleccionado: <strong id="selected-metal-name" style="color: var(--accent-gold);">Oro Amarillo de 18K</strong>
+              </span>
+              <div class="metal-buttons">
+                <button class="btn-metal active" data-metal="yellow" data-name="Oro Amarillo de 18K" aria-label="Oro Amarillo" style="background-color: #D4AF37;"></button>
+                <button class="btn-metal" data-metal="white" data-name="Oro Blanco de 18K" aria-label="Oro Blanco" style="background-color: #E5E5E5;"></button>
+                <button class="btn-metal" data-metal="rose" data-name="Oro Rosa de 18K" aria-label="Oro Rosa" style="background-color: #B76E79;"></button>
+              </div>
+            </div>
+
+            <!-- Selector de Quilates -->
+            <div class="customizer-item">
+              <span class="customizer-label" style="display: block; font-size: 10px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-elegance); margin-bottom: 8px;">
+                Quilates del Diamante: <strong id="selected-carats-label" style="color: var(--accent-gold);">2.0 ct</strong>
+              </span>
+              <div class="carat-selector">
+                <button class="btn-custom-option" data-carat="1.0">1.0 ct</button>
+                <button class="btn-custom-option" data-carat="1.5">1.5 ct</button>
+                <button class="btn-custom-option active" data-carat="2.0">2.0 ct</button>
+                <button class="btn-custom-option" data-carat="2.5">2.5 ct</button>
+              </div>
+            </div>
+
+            <!-- Selector de Corte -->
+            <div class="customizer-item">
+              <span class="customizer-label" style="display: block; font-size: 10px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-elegance); margin-bottom: 8px;">
+                Corte del Diamante: <strong id="selected-cut-label" style="color: var(--accent-gold);">Brillante</strong>
+              </span>
+              <div class="cut-selector">
+                <button class="btn-custom-option active" data-cut="Brillante">Brillante</button>
+                <button class="btn-custom-option" data-cut="Esmeralda">Esmeralda</button>
+                <button class="btn-custom-option" data-cut="Oval">Oval</button>
+                <button class="btn-custom-option" data-cut="Princesa">Princesa</button>
+              </div>
+            </div>
+
+            <!-- Selector de Talla de Anillo -->
+            <div class="customizer-item">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <span class="customizer-label" style="font-size: 10px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-elegance); margin: 0;">
+                  Talla de Anillo (Arg):
+                </span>
+                <button type="button" id="btn-size-guide-trigger" style="background: none; border: none; text-decoration: underline; font-size: 10px; color: var(--gray-medium); cursor: pointer; letter-spacing: 0.05em; font-family: var(--font-sans);">📐 Guía de Tallas</button>
+              </div>
+              <select id="ring-size" class="form-control select-control" style="width: 100%; padding: 12px 20px; font-size: 12px; margin: 0;">
+                <option value="12">Talla 12 (16.5 mm)</option>
+                <option value="14" selected>Talla 14 (17.2 mm) - Estándar</option>
+                <option value="16">Talla 16 (17.8 mm)</option>
+                <option value="18">Talla 18 (18.5 mm)</option>
+                <option value="20">Talla 20 (19.2 mm)</option>
+              </select>
+            </div>
+
+            <!-- Grabado Personalizado -->
+            <div class="customizer-item">
+              <span class="customizer-label" style="display: block; font-size: 10px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-elegance); margin-bottom: 8px;">
+                Grabado Personalizado (Interno - Sin costo):
+              </span>
+              <input type="text" id="ring-engraving" placeholder="Ej. A & B 2026" maxlength="15" class="form-control" style="padding: 12px 20px; font-size: 12px;">
+            </div>
+
+          </div>
+
+          <div class="product-actions" style="display: flex; flex-direction: column; gap: 10px;">
+            <button class="btn btn-primary btn-block" id="btn-showroom-add-to-bag" style="margin: 0;">Añadir a la Bolsa</button>
+            <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 10px;">
+              <a href="#contacto" class="btn btn-outline" id="btn-showroom-cta" style="margin: 0; font-size: 11px; text-align: center; display: flex; justify-content: center; align-items: center; padding: 12px 10px;">Agendar Cita</a>
+              <a href="https://wa.me/5491100000000?text=Hola" target="_blank" rel="noopener" class="btn btn-outline" id="btn-showroom-wa" style="margin: 0; font-size: 11px; text-align: center; display: flex; justify-content: center; align-items: center; padding: 12px 10px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 5px; display: inline-block; vertical-align: middle;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Colección Destacada -->
+  <section class="coleccion" id="coleccion">
+    <div class="container">
+      <div class="coleccion-header text-center reveal">
+        <span class="section-tag">PIEZAS ATEMPORALES</span>
+        <h2 class="section-title">La Colección de Autor</h2>
+        <p class="section-desc">Una cuidada selección de nuestras creaciones más icónicas diseñadas para trascender generaciones.</p>
+      </div>
+
+      <!-- Pestañas de categorías del catálogo -->
+      <div class="portfolio-tabs reveal" style="display: flex; justify-content: center; gap: 30px; margin-bottom: 50px;">
+        <button class="btn-tab active" data-tab="todos">Todos</button>
+        <button class="btn-tab" data-tab="joyeria">Joyería</button>
+        <button class="btn-tab" data-tab="relojeria">Relojería</button>
+        <button class="btn-tab" data-tab="accesorios">Accesorios</button>
+      </div>
+
+      <div class="products-grid" id="catalog-products-grid">
+        <!-- Joyería - Collar -->
+        <div class="product-card reveal" data-category="joyeria" data-title="Collar L'Étoile" data-price="U$D 12,400" data-subcategory="Collares / Gargantillas" data-description="Un collar espectacular que suspende un diamante colgante de corte brillante sobre una cadena de oro blanco de 18 quilates. La caída y el brillo de esta pieza representan la elegancia de la alta costura." data-img="assets/luxury_necklace.jpg" data-specs="Metal:Oro Blanco 18K|Gema Central:Diamante GIA 1.5 ct|Color y Claridad:Color E, Claridad VVS2|Largo de Cadena:45 cm ajustable" style="cursor: pointer;">
+          <div class="card-img-container">
+            <img src="assets/luxury_necklace.jpg" alt="Collar L'Étoile en Oro Blanco y Diamante" class="card-img">
+            <div class="card-overlay">
+              <span class="btn-card-view">Ver Detalles</span>
+            </div>
+          </div>
+          <div class="card-info">
+            <h4 class="card-title">Collar L'Étoile</h4>
+            <div class="card-category">Collares / Gargantillas</div>
+            <div class="card-price">U$D 12,400</div>
+          </div>
+        </div>
+
+        <!-- Joyería - Brazalete -->
+        <div class="product-card reveal delay-1" data-category="joyeria" data-title="Brazalete Aurelia" data-price="U$D 9,800" data-subcategory="Pulseras / Brazaletes" data-description="Una pulsera de diseño rígido y minimalista esculpida a mano en oro amarillo de 18 quilates, engastada con un pavé de pequeños diamantes redondos de brillo excelente." data-img="assets/luxury_bracelet.jpg" data-specs="Metal:Oro Amarillo 18K|Piedras:Pavé de diamantes de 0.85 ct total|Corte de Gemas:Brillante Excelente|Diámetro:6.0 cm (talla estándar M)" style="cursor: pointer;">
+          <div class="card-img-container">
+            <img src="assets/luxury_bracelet.jpg" alt="Brazalete Aurelia en Oro de 18K" class="card-img">
+            <div class="card-overlay">
+              <span class="btn-card-view">Ver Detalles</span>
+            </div>
+          </div>
+          <div class="card-info">
+            <h4 class="card-title">Brazalete Aurelia</h4>
+            <div class="card-category">Pulseras / Brazaletes</div>
+            <div class="card-price">U$D 9,800</div>
+          </div>
+        </div>
+
+        <!-- Joyería - Aros -->
+        <div class="product-card reveal delay-2" data-category="joyeria" data-title="Aros Argollas Vendôme" data-price="U$D 4,200" data-subcategory="Aros / Argollas" data-description="Un par de aros argolla clásicos y refinados, perfectos para lucir diariamente o en galas. Cuentan con una hilera interna y externa de diamantes engarzados bajo microscopio." data-img="assets/luxury_earrings_hoop.jpg" data-specs="Metal:Oro Amarillo 18K|Piedras:Diamantes engastados de 0.50 ct total|Cierre:Italiano oculto de alta seguridad|Diámetro:1.8 cm" style="cursor: pointer;">
+          <div class="card-img-container">
+            <img src="assets/luxury_earrings_hoop.jpg" alt="Aros Argollas Vendôme en Oro 18K" class="card-img">
+            <div class="card-overlay">
+              <span class="btn-card-view">Ver Detalles</span>
+            </div>
+          </div>
+          <div class="card-info">
+            <h4 class="card-title">Argollas Vendôme</h4>
+            <div class="card-category">Aros / Argollas</div>
+            <div class="card-price">U$D 4,200</div>
+          </div>
+        </div>
+
+        <!-- Relojería - Clásico -->
+        <div class="product-card reveal" data-category="relojeria" data-title="Reloj Majestic Chrono" data-price="U$D 24,500" data-subcategory="Alta Relojería / Mecánico" data-description="Una obra maestra de la alta relojería que combina un mecanismo cronógrafo mecánico automático visible a través de su cristal de zafiro posterior, con una lujosa caja de oro rosa y correa de cocodrilo cosida a mano." data-img="assets/luxury_watch_classic.jpg" data-specs="Caja:Oro Rosa 18K de 41 mm|Movimiento:Cronógrafo Mecánico Automático|Correa:Piel de cocodrilo negra genuina|Resistencia:Cristal de zafiro antirreflejo, 50m" style="cursor: pointer;">
+          <div class="card-img-container">
+            <img src="assets/luxury_watch_classic.jpg" alt="Reloj Majestic Chrono en Oro Rosa" class="card-img">
+            <div class="card-overlay">
+              <span class="btn-card-view">Ver Detalles</span>
+            </div>
+          </div>
+          <div class="card-info">
+            <h4 class="card-title">Majestic Chrono</h4>
+            <div class="card-category">Alta Relojería / Mecánico</div>
+            <div class="card-price">U$D 24,500</div>
+          </div>
+        </div>
+
+        <!-- Relojería - Diver -->
+        <div class="product-card reveal delay-1" data-category="relojeria" data-title="Reloj Ocean Diver" data-price="U$D 11,200" data-subcategory="Estilo Deportivo / Diver" data-description="Diseñado para los amantes de la aventura y el lujo. Este robusto reloj de buceo cuenta con una caja de acero inoxidable, un dial negro de alta visibilidad, y un bisel cerámico giratorio unidireccional." data-img="assets/luxury_watch_diver.jpg" data-specs="Caja:Acero inoxidable 904L de 42 mm|Movimiento:Calibre automático con 70h reserva|Bisel:Cerámica negra giratoria unidireccional|Estanqueidad:300 metros (30 ATM) profesional" style="cursor: pointer;">
+          <div class="card-img-container">
+            <img src="assets/luxury_watch_diver.jpg" alt="Reloj Ocean Diver en Acero" class="card-img">
+            <div class="card-overlay">
+              <span class="btn-card-view">Ver Detalles</span>
+            </div>
+          </div>
+          <div class="card-info">
+            <h4 class="card-title">Ocean Diver</h4>
+            <div class="card-category">Estilo Deportivo / Diver</div>
+            <div class="card-price">U$D 11,200</div>
+          </div>
+        </div>
+
+        <!-- Accesorios - Cartera -->
+        <div class="product-card reveal" data-category="accesorios" data-title="Cartera Elegance Leather" data-price="U$D 3,400" data-subcategory="Marroquinería / Bolsos" data-description="El bolso icónico de Plaza Vendôme. Confeccionado en cuero vacuno plena flor en tono arena, su estructura rígida y herrajes bañados en oro fino transmiten el espíritu de la exclusividad parisina." data-img="assets/luxury_handbag.jpg" data-specs="Material:Cuero vacuno plena flor|Herrajes:Metal bañado en oro amarillo de 18K|Interior:Forro de gamuza con bolsillos internos|Dimensiones:28 cm x 20 cm x 12 cm" style="cursor: pointer;">
+          <div class="card-img-container">
+            <img src="assets/luxury_handbag.jpg" alt="Cartera Elegance Leather en Tono Arena" class="card-img">
+            <div class="card-overlay">
+              <span class="btn-card-view">Ver Detalles</span>
+            </div>
+          </div>
+          <div class="card-info">
+            <h4 class="card-title">Elegance Leather</h4>
+            <div class="card-category">Marroquinería / Bolsos</div>
+            <div class="card-price">U$D 3,400</div>
+          </div>
+        </div>
+
+        <!-- Accesorios - Tarjetero -->
+        <div class="product-card reveal delay-1" data-category="accesorios" data-title="Billetera Classic Cardholder" data-price="U$D 650" data-subcategory="Pequeña Marroquinería" data-description="Una billetera tarjetero ultrafina para los amantes del minimalismo. Confeccionada en cuero Saffiano negro de alta resistencia, con costuras a tono y un discreto emblema bañado en oro." data-img="assets/luxury_wallet.jpg" data-specs="Material:Cuero Saffiano italiano|Capacidad:4 ranuras de tarjetas y 1 compartimento central|Logotipo:Emblema mini en relieve bañado en oro|Dimensiones:10 cm x 7 cm x 0.4 cm" style="cursor: pointer;">
+          <div class="card-img-container">
+            <img src="assets/luxury_wallet.jpg" alt="Billetera Classic Cardholder en Cuero Negro" class="card-img">
+            <div class="card-overlay">
+              <span class="btn-card-view">Ver Detalles</span>
+            </div>
+          </div>
+          <div class="card-info">
+            <h4 class="card-title">Classic Cardholder</h4>
+            <div class="card-category">Pequeña Marroquinería</div>
+            <div class="card-price">U$D 650</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Testimonios (Carrusel Editorial) -->
+  <section class="testimonios">
+    <div class="container-small">
+      <div class="testimonials-slider" id="testimonials-slider">
+        <div class="testimonial-slide active">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"La experiencia de Plaza Vendôme va mucho más allá de adquirir una joya. El proceso de personalización de mi anillo y la atención meticulosa a los detalles hicieron que la pieza tuviese un valor emocional incalculable. Una obra de arte absoluta."</p>
+          <span class="testimonial-author">— Victoria S., Buenos Aires</span>
+        </div>
+        <div class="testimonial-slide">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Diseño impecable y una pureza que no he encontrado en ninguna otra firma. El contraste entre la sobriedad del metal y el fuego del diamante es hipnótico. El brazalete Aurelia es mi compañero diario."</p>
+          <span class="testimonial-author">— Mariana D., Madrid</span>
+        </div>
+        <div class="testimonial-slide">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"La atención en el Atelier y la transparencia sobre la certificación de los diamantes me dieron absoluta confianza. La joya superó mis expectativas más exigentes. Un servicio verdaderamente premium."</p>
+          <span class="testimonial-author">— Alejandro R., Miami</span>
+        </div>
+      </div>
+      <div class="slider-dots" id="slider-dots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección FAQ (Preguntas Frecuentes) -->
+  <section class="faq" id="faq">
+    <div class="container-small">
+      <div class="faq-header text-center reveal">
+        <span class="section-tag">INFORMACIÓN Y ASESORAMIENTO</span>
+        <h2 class="section-title">Preguntas Frecuentes</h2>
+        <p class="section-desc">Resolvemos tus dudas acerca del proceso de adquisición, envíos y autenticidad de nuestras piezas.</p>
+      </div>
+
+      <div class="faq-list reveal delay-1">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Las gemas y metales cuentan con certificación oficial?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sí, absolutamente todas nuestras gemas principales mayores a 0.5 quilates cuentan con una certificación gemológica emitida por el Gemological Institute of America (GIA). Cada joya de Plaza Vendôme viene acompañada de su certificado oficial impreso y un código único grabado con láser en el filetín del diamante, garantizando su pureza y autenticidad.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cómo se gestiona el diseño a medida (Bespoke)?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>El proceso comienza con una cita privada presencial o virtual. Trabajamos directamente contigo en base a tus referencias o ideas. Diseñamos un prototipo en 3D interactivo y, una vez que apruebas la geometría, nuestros orfebres y engastadores moldean la joya en nuestro Atelier. Este proceso toma de 4 a 6 semanas.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Qué métodos de pago y financiación ofrecen?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Ofrecemos múltiples opciones de pago que incluyen transferencias bancarias internacionales, tarjetas de crédito (con opciones de financiación local), y pagos en criptoactivos seleccionados para transacciones internacionales seguras. La facturación cumple con todas las regulaciones de la Unidad de Información Financiera (UIF).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cuáles son los plazos de entrega y costos de envío?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Realizamos envíos asegurados de alta seguridad a todo el país y al exterior. Para piezas en stock, la entrega se realiza en 24-48 horas. Para piezas personalizadas, el tiempo es de 3 a 5 semanas. El envío es totalmente sin cargo para el cliente e incluye un empaque premium blindado de máxima seguridad.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Contacto -->
+  <section class="contacto" id="contacto">
+    <div class="container grid-contacto">
+      <div class="contacto-info reveal">
+        <span class="section-tag">EL ATELIER</span>
+        <h2 class="section-title">Comienza tu viaje</h2>
+        <p class="contacto-desc">Te invitamos a agendar una cita privada e individual en nuestro Atelier o una sesión virtual con uno de nuestros maestros joyeros para descubrir nuestras piezas o diseñar tu joya a medida.</p>
+        
+        <div class="contacto-details">
+          <div class="detail-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Av. Alvear 1850, Recoleta, Buenos Aires (Cita previa)</span>
+          </div>
+          <div class="detail-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>atelier@plazavendome.com</span>
+          </div>
+          <div class="detail-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+            <span>+54 9 11 0000-0000</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulario Elegante -->
+      <div class="contacto-form-container reveal delay-1">
+        <form class="contacto-form" id="appointment-form">
+          <div class="form-group">
+            <label for="name" class="form-label">Nombre Completo</label>
+            <input type="text" id="name" class="form-control" placeholder="Ej. Sofía Lorenz" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" id="email" class="form-control" placeholder="sofia@ejemplo.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone" class="form-label">Teléfono</label>
+              <input type="tel" id="phone" class="form-control" placeholder="+54 9 11 ...">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="interest" class="form-label">Servicio de Interés</label>
+            <select id="interest" class="form-control select-control">
+              <option value="showroom">Ver Colección Solitaire</option>
+              <option value="custom">Diseño a Medida (Bespoke)</option>
+              <option value="consultation">Asesoría de Diamantes</option>
+              <option value="virtual">Consulta Virtual Privada</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Mensaje o Solicitudes Especiales (Opcional)</label>
+            <textarea id="message" class="form-control" rows="4" placeholder="Descríbanos sus preferencias..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" id="btn-submit-form">Solicitar Cita Privada</button>
+        </form>
+        <div class="form-success-msg" id="form-success-msg">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 15px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <h4>Solicitud Recibida</h4>
+          <p>Un asesor de nuestro Atelier se contactará con usted en las próximas 24 horas para coordinar su visita.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#" class="footer-logo">PLAZA VENDÔME</a>
+        <p class="footer-tagline">El lujo del detalle. La eternidad del arte.</p>
+      </div>
+      <div class="footer-links">
+        <div class="link-group">
+          <h5>Colecciones</h5>
+          <a href="#showroom">Solitaire</a>
+          <a href="#coleccion">Atelier Autor</a>
+          <a href="#">Bespoke</a>
+        </div>
+        <div class="link-group">
+          <h5>Legal</h5>
+          <a href="#">Privacidad</a>
+          <a href="#">Términos y Condiciones</a>
+          <a href="#">Certificados GIA</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container flex-space-between">
+        <p>&copy; 2026 PLAZA VENDÔME HAUTE JOAILLERIE. Todos los derechos reservados.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Pinterest">PIN</a>
+          <a href="#" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Flotante -->
+  <a href="https://wa.me/5491100000000?text=Hola,%20quiero%20coordinar%20una%20consulta%20en%20el%20Atelier%20de%20Plaza%20Vendôme." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp" id="whatsapp-floating-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+  </a>
+
+  <!-- Modal de Detalle de Producto -->
+  <div class="product-modal-backdrop" id="product-details-modal" style="display: none;">
+    <div class="product-modal-content">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Cerrar modal">×</button>
+      <div class="modal-grid">
+        <div class="modal-gallery">
+          <img src="" alt="" id="modal-product-img">
+        </div>
+        <div class="modal-info">
+          <span class="modal-tag" id="modal-product-tag">Joyería</span>
+          <h3 class="modal-title" id="modal-product-title">Producto</h3>
+          <div class="modal-price" id="modal-product-price">U$D 0,000</div>
+          <p class="modal-description" id="modal-product-desc">Descripción detallada.</p>
+          
+          <div class="modal-specs">
+            <h4>Especificaciones Técnicas</h4>
+            <ul class="specs-list" id="modal-product-specs">
+              <!-- Cargado dinámicamente -->
+            </ul>
+          </div>
+
+          <!-- Certificado GIA Flippable 3D (Decorativo de autenticidad) -->
+          <div class="gia-certificate-wrapper" id="gia-cert-container">
+            <div class="gia-card-inner">
+              <!-- Frente: Vista Previa del Reporte GIA -->
+              <div class="gia-card-front">
+                <div class="gia-header">
+                  <span>GIA GEMOLOGICAL REPORT</span>
+                  <span class="gia-logo-text">GIA</span>
+                </div>
+                <div class="gia-body">
+                  <div class="gia-seal"></div>
+                  <div class="gia-cert-details">
+                    <h4 id="gia-cert-title">Eternity Solitaire</h4>
+                    <p>Reporte de Autenticidad Certificado</p>
+                  </div>
+                </div>
+                <div class="gia-footer">
+                  <span>Clic para ver especificaciones</span>
+                  <span>📐 3D CARD</span>
+                </div>
+              </div>
+              
+              <!-- Dorso: Detalles de Grado del Diamante/Metal -->
+              <div class="gia-card-back">
+                <div class="gia-back-header">
+                  <span>SPECIFICATIONS SCALES</span>
+                  <span style="color: var(--accent-gold); font-weight: 600;">VERIFIED</span>
+                </div>
+                <div class="gia-back-body">
+                  <div class="gia-spec-row">
+                    <span>Certificado GIA</span>
+                    <strong style="color: var(--accent-gold);">Excelente (D-FL)</strong>
+                  </div>
+                  <div class="gia-spec-row">
+                    <span>Origen Oro</span>
+                    <strong>18K Reciclado Ético</strong>
+                  </div>
+                  <div class="gia-spec-row">
+                    <span>Pureza / Corte</span>
+                    <strong>Flawless / Excelente</strong>
+                  </div>
+                  <div class="gia-spec-row">
+                    <span>Pulido y Simetría</span>
+                    <strong>Excelente / Excelente</strong>
+                  </div>
+                </div>
+                <div class="gia-back-footer">
+                  <span>Reporte GIA Oficial Verificado #7493201844</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="modal-actions" style="display: flex; flex-direction: column; gap: 10px;">
+            <a href="" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block" id="modal-wa-cta" style="margin: 0; text-align: center; display: flex; justify-content: center; align-items: center;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              Consultar a un Asesor
+            </a>
+            <button class="btn btn-outline btn-block" id="modal-add-to-bag-btn" style="margin: 0;">Añadir a la Bolsa</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carrito de Compras (Slide-over Sidebar) -->
+  <div class="cart-backdrop" id="cart-backdrop" style="display: none;">
+    <div class="cart-content">
+      <div class="cart-header">
+        <h3>Tu Bolsa de Compras</h3>
+        <button class="cart-close-btn" id="btn-cart-close" aria-label="Cerrar bolsa">×</button>
+      </div>
+      
+      <!-- Lista de Productos -->
+      <div class="cart-items-list" id="cart-items-list">
+        <!-- Relleno dinámico con JS -->
+      </div>
+      
+      <!-- Pie del Carrito (Resumen de Compra) -->
+      <div class="cart-footer">
+        <div class="cart-summary">
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span id="cart-subtotal">U$D 0</span>
+          </div>
+          <div class="summary-row">
+            <span>Envío (Asegurado)</span>
+            <span style="color: var(--accent-gold); font-weight: 500;">Gratuito</span>
+          </div>
+          <div class="summary-row total-row">
+            <span>Total Estimado</span>
+            <span id="cart-total">U$D 0</span>
+          </div>
+        </div>
+        
+        <button class="btn btn-primary btn-block" id="btn-cart-checkout" style="margin-top: 20px;">
+          Confirmar Reserva vía WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Guía de Tallas -->
+  <div class="product-modal-backdrop" id="size-guide-modal" style="display: none;">
+    <div class="product-modal-content" style="max-width: 600px;">
+      <button class="modal-close-btn" id="size-modal-close-btn" aria-label="Cerrar modal de tallas">×</button>
+      <div class="modal-info">
+        <span class="modal-tag">ASESORÍA</span>
+        <h3 class="modal-title">Guía de Tallas de Anillos</h3>
+        <p class="modal-description" style="margin-bottom: 20px;">Encuentra tu medida ideal siguiendo nuestra tabla de diámetros oficiales para Argentina y Europa.</p>
+        
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 30px; font-family: var(--font-sans); font-size: 13px;">
+          <thead>
+            <tr style="border-bottom: 2px solid var(--text-elegance); text-align: left;">
+              <th style="padding: 10px 5px; font-weight: 500;">Talla Oficial (Arg/Eur)</th>
+              <th style="padding: 10px 5px; font-weight: 500;">Diámetro Interno (mm)</th>
+              <th style="padding: 10px 5px; font-weight: 500;">Circunferencia (mm)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid var(--border-color);">
+              <td style="padding: 10px 5px;">Talla 12</td>
+              <td style="padding: 10px 5px;">16.5 mm</td>
+              <td style="padding: 10px 5px;">51.8 mm</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-color);">
+              <td style="padding: 10px 5px;">Talla 14 (Estándar)</td>
+              <td style="padding: 10px 5px;">17.2 mm</td>
+              <td style="padding: 10px 5px;">54.0 mm</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-color);">
+              <td style="padding: 10px 5px;">Talla 16</td>
+              <td style="padding: 10px 5px;">17.8 mm</td>
+              <td style="padding: 10px 5px;">55.9 mm</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-color);">
+              <td style="padding: 10px 5px;">Talla 18</td>
+              <td style="padding: 10px 5px;">18.5 mm</td>
+              <td style="padding: 10px 5px;">58.1 mm</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-color);">
+              <td style="padding: 10px 5px;">Talla 20</td>
+              <td style="padding: 10px 5px;">19.2 mm</td>
+              <td style="padding: 10px 5px;">60.3 mm</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div style="border-top: 1px solid var(--border-color); padding-top: 20px;">
+          <h4 style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 10px; color: var(--text-elegance);">¿Cómo medir en casa?</h4>
+          <ol style="font-size: 12.5px; color: var(--gray-medium); padding-left: 20px; line-height: 1.6; display: flex; flex-direction: column; gap: 8px;">
+            <li>Corta una tira fina de papel de unos 10 cm de largo y 0.5 cm de ancho.</li>
+            <li>Envuélvela alrededor del nudillo del dedo en el que usarás el anillo (debe quedar cómoda, ni muy suelta ni muy apretada).</li>
+            <li>Marka con un lápiz el punto exacto donde se superpone.</li>
+            <li>Estira la tira y mide los milímetros de la marca con una regla.</li>
+            <li>Compara la medida con la tabla superior para hallar tu talla ideal.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="main.js?v=7"></script>
+</body>
+</html>
